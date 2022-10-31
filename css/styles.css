@@ -57,6 +57,7 @@ header {
 .main-header {
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -199,6 +200,9 @@ header {
 .section-list {
 	display: flex;
 }
+.item {
+	min-width: 270px;
+}
 
 .section-title {
 	margin-bottom: 10px;
@@ -225,9 +229,18 @@ header {
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 }
+.pics {
+	display: flex;
+}
+
+.pics-item:not(:last-child) {
+	margin-right: 30px;
+}
 
 /*----------TEAM---------- */
 .team {
+	
+
 	background-color: var(--buttons-port-color);
 }
 .team-title {
@@ -239,6 +252,17 @@ header {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
+}
+.team-list {
+	display: flex;
+	min-width: 270px;
+}
+.team-card:not(:last-child) {
+	margin-right: 30px;
+}
+.team-element {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .team-name {
 	margin-bottom: 10px;
@@ -261,7 +285,15 @@ header {
 
 /*----------FOOTER----------*/
 .footer {
+	padding: 0px 60px;
 	background-color: var(--background-footer-color);
+}
+
+.main-footer {
+	display: inline-block;
+	text-align: start;
+	padding: 60px 0px;
+	
 }
 .logo-footer:hover,
 .logo-footer:focus {
@@ -282,11 +314,16 @@ header {
 }
 
 .address {
+	padding-top: 20px;
+
 	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
+}
+.adress-item:not( :last-child) {
+padding-bottom: 9px;
 }
 .adress-street:hover,
 .adress-street:focus {
@@ -361,6 +398,9 @@ header {
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
+.flex-element {
+	border-bottom: 1px solid #eeeeee;
+}
 
 .flex-container:nth-child(3n) {
 	margin: 0;
@@ -372,7 +412,6 @@ header {
 .cards-sites {
 	display: flex;
 	flex-wrap: wrap;
-	
 }
 .cards-sites-title {
 	font-weight: 700;
