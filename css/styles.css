@@ -74,8 +74,12 @@ button {
 
 /* ==========HEADER========== */
 
+.header {
+border-bottom: 1px solid #ececec;
+}
+
 .header .container {
-	border-bottom: 1px solid #ececec;
+	
 	display: flex;
 	align-items: center;
 }
@@ -168,7 +172,6 @@ button {
 	padding: 200px 0;
 
 	background: var(--background-footer-color);
-	/* color: var(--secondary-text-color); */
 	text-align: center;
 }
 
@@ -388,6 +391,7 @@ address {
 
 .adress-mail {
 	color: var(--footer-text-color);
+	line-height: 1.71;
 }
 
 .adress-tel {
